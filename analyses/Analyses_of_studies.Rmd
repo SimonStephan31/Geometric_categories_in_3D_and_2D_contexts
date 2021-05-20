@@ -50,6 +50,35 @@ tdata_within <- read.delim("data_exp1b.txt", header=TRUE, sep="\t", na.strings="
 tdata_2d <- read.delim("data_exp2.txt", header=TRUE, sep="\t", na.strings="NA", dec=".", strip.white=TRUE)
 ```
 
+# Summarize demographic information 
+
+```{r}
+# Exp. 1a 
+mean(tdata_between$Age)
+median(tdata_between$Age)
+sd(tdata_between$Age)
+
+table(tdata_between$Sex) # 1 = male, 2 = female, 3 = other, 4 = prefer not to say
+
+
+# Exp. 1b
+mean(tdata_within$Age)
+median(tdata_within$Age)
+sd(tdata_within$Age)
+
+table(tdata_within$Sex) # 1 = male, 2 = female, 3 = other, 4 = prefer not to say
+
+
+# Exp. 2
+mean(tdata_2d$Age)
+median(tdata_2d$Age)
+sd(tdata_2d$Age)
+
+table(tdata_2d$Sex) # 1 = male, 2 = female, 3 = other, 4 = prefer not to say
+
+
+```
+
 
 # Create Figures (for Experiment 1a, 1b, and 2)
 
